@@ -9,9 +9,8 @@ import org.springframework.context.annotation.Bean;
 public class FaasDemoFunctionApplication {
 
 
-  //TODO: Figure out the proper way to handle sendEmail as part of Spring Cloud Function
   @Bean
-  public Function<String, String> sendEmail() {
+  public Function<String, String> formatEmail() {
     return value -> value.toLowerCase();
   }
 
